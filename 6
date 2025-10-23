@@ -1,0 +1,10 @@
+import os
+path = input("путь к папке")
+for name in os.listdir(path):
+    full_path = os.path.join(path, name)
+    if os.path.isdir(full_path):
+        print(f"папка {name}")
+    elif os.path.isfile(full_path):
+        print(f"файл {name}")
+    else:
+        print(f"не папка или файл {name}")

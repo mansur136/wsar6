@@ -1,0 +1,8 @@
+filename = input("Введите имя файла для записи: ")
+my_list = ["яблоко", "банан", "вишня"]
+
+with open(filename, 'w') as file:
+    for item in my_list:
+        file.write(item + "\n")
+
+print("Список записан в файл", filename)

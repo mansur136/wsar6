@@ -1,0 +1,6 @@
+import os
+path = input("введите путь")
+print("существует ли:", os.access(path, os.F_OK))
+print("можно ли читать:", os.access(path, os.R_OK))
+print("можно ли записывать:", os.access(path, os.W_OK))
+print("можно ли выполнять:", os.access(path, os.X_OK))

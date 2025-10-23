@@ -1,0 +1,6 @@
+filename = input("Введите имя текстового файла: ")
+count = 0
+with open(filename, 'r') as file:
+    for line in file:
+        count += 1
+print("Количество строк в файле:", count)
